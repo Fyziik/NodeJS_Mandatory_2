@@ -1,0 +1,129 @@
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(1);
+    padding: 0 25% 0 25%;
+}
+
+#hover-text {
+    margin-top: 50px;
+    width: 25%;
+    position: absolute;
+}
+
+.project {
+    animation-name: close;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    border-radius: 25px;
+    margin-top: 5%;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: #4CAF50;
+}
+
+.project-header {
+    padding: 10px;
+}
+
+.project-header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.project-content {
+    display: none;
+    opacity: 0;
+    padding: 20px;
+    animation-name: opacity;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+.project:hover {
+    animation-name: expand;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes opacity {
+    from {opacity: 0; height: 0; ;}
+    to {opacity: 100%; height: calc(100% - 90px); }
+}
+
+@keyframes close {
+    from { height: calc(90%); background: rgba(25, 25, 25, 0.9); }
+    to { height: 80px; background: black; }
+}
+
+@keyframes expand {
+    from { height: 60px; background: black; }
+    to { height: calc(100% - 40px); background: rgba(25, 25, 25, 0.9); }
+}
+
+.project-description {
+    color: white;
+    text-align: center;
+    font-size: 1.2vw;
+    overflow-x: auto;
+    margin: 10px 10% 25px 10%;
+    height: fit-content;
+    max-height: 110px;
+    width: 80%;
+}
+
+.gitURL {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.gitURL:visited {
+    color: blue;
+}
+
+.main-image {
+    font-size: 1.2rem;
+    padding: 0;
+    width: 25%;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    text-align: left;
+    padding: 0;
+    flex: calc(100% / 3);
+}
+
+.column h1 {
+    text-align: center;
+}
+
+.column ul {
+    background: rgba(25, 25, 25, 0.9);
+}
+
+.column li {
+    font-size: 1.2rem;
+}
+
+.column p {
+    color: white;
+    background: rgba(25, 25, 25, 0.9);
+    margin: 0;
+    padding: 10px 25px 10px 10px;
+    border-left: 1px solid #4CAF50;
+}
+
+.column:nth-of-type(2) ul {
+    background: rgba(55, 55, 55, 0.9)
+}
+
+

@@ -1,0 +1,53 @@
+#contact-form {
+    padding: 2.5% 25% 0 25%;
+    font-size: 1.4rem;
+    
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#success-message {
+    text-align: center;
+    background: rgba(0, 155, 0, 0.5);
+    margin-bottom: 2.5%;
+    font-size: 1.5rem;
+    height: 50px;
+    padding-top: 20px;
+    display: none;
+
+}
+
+#page-content {
+    padding-top: 0%;
+}
+
+#contact-form-image {
+    width: 75%;
+    margin: 12.5%;
+    margin-top: 25%;
+    height: 100%;
+}
+
+br {
+    margin-bottom: 1%;
+}
+
+input {
+    height: 25px;
+    margin-bottom: 5%;
+}
+
+#sendButton {
+    margin-top: 5%;
+    width: 25%;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,69 @@
+#Skills-display-box-all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    padding: 0 10%;
+}
+
+.skills-display-box-single {
+    background: rgb(225, 225, 225);
+    position: relative;
+    padding: 5% 0 0 0;
+    height: 450px;
+}
+
+.skills-display-box-single:nth-of-type(even) {
+    background-color: #FFFFFF;
+}
+
+.skills-display-box-single:hover {
+    animation-name: green-fade;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes green-fade {
+    from { background: rgb(225, 225, 225); }
+    to { background: #4CAF50; }
+}
+
+.skills-display-box-single:hover p {
+    border-bottom: 2px solid rgb(225, 225, 225);
+}
+
+.skills-display-box-single p {
+    height: 30%;
+    font-size: 1.2rem;
+    margin-top: 7.5%;
+    padding-bottom: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.skills-display-box-single img {
+    object-fit: contain;
+    width: 35%;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.skills-display-box-single .skills-rating {
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 5%;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.skills-rating img {
+    width: 90%;
+    height: auto;
+    padding: 5% 5%;
+}

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+#page-intro-box {
+    margin: 0 0 0 15%;
+    padding: 25px;
+    width: 20%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #4CAF50;
+}
+
+#page-intro {
+    color: white;
+    padding: 0;
+    text-align: center;
+    height: 600px;
+    position: relative;
+    z-index: 6;
+}
+
+#page-intro #page-intro-titel {
+    font-size: 4em;
+    padding-left: 0;
+    margin: 0%;
+}
+
+#page-intro #page-intro-description {
+    margin: 50px 0 0 17.5%;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0 0 0 10px;
+    width: 55%;
+    -webkit-text-stroke: 0.1px black;
+    background: rgba(0, 0, 0, 0.25);
+    border-left: 1px solid #4CAF50;
+}
+
+#page-content {
+    background: #FFFFFF;
+    padding-top: 2.5%;
+}
