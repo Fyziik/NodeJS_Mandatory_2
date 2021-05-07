@@ -1,6 +1,6 @@
 #top-section {
-    width: 70%;
-    margin: 0 15%;
+    width: 80%;
+    margin: 0 10%;
 }
 
 #top-section-image {
@@ -32,8 +32,8 @@
 }
 
 #bottom-section {
-    width: 70%;
-    margin: 0 15%;
+    width: 80%;
+    margin: 0 10%;
 }
 
 .experience-area {
@@ -55,13 +55,13 @@
     font-size: 1.3rem;
     color: #4CAF50;
     float: left;
-    width: 13%;
+    width: 17%;
 }
 
 .bottom-section-experience-description {
     display: inline-block;
     padding-top: 25px;
-    width: 87%;
+    width: 83%;
     padding-bottom: 2.5%;
     background: rgb(211, 211, 211);
     border-bottom: 1px solid black;
@@ -73,7 +73,7 @@
 
 
 .bottom-section-experience-description p {
-    padding: 0 0 0 2.5%;
+    padding: 0 2.5% 0 2.5%;
     margin: 0;
 }
 

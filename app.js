@@ -31,7 +31,7 @@ const schedule = fs.readFileSync(__dirname + "/public/schedule/schedule.html", '
 const resume = fs.readFileSync(__dirname + "/public/resume/resume.html", 'utf-8')
 
 app.get('/', (req, res) => {
-    res.send(htmlStart + navbar + frontpage + footer + htmlEnd)
+    res.send(htmlStart + navbar + frontpage + htmlEnd)
 })
 
 app.get('/skills' , (req, res) => {
